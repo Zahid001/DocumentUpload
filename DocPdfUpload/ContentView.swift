@@ -32,7 +32,7 @@ struct ContentView: View {
             }
             
             Button {
-                let url = "http://dss.aws.simecsystem.com:10012/api/auth/file-upload"
+                let url = ""
                 let filePath = Bundle.main.url(forResource: "ppt", withExtension: "ppt")?.path
                 
                 print("filePath",filePath)
@@ -40,7 +40,7 @@ struct ContentView: View {
                 let httpHeaders: HTTPHeaders = [
                     "Accept" : "application/json",
                     "Content-Type": "application/json",
-                    "Authorization" : "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiZGM1YTdlZGZhYmVjYTE2Y2VlNzU1NzE3Y2ZkNzliYjZjOTBiYTBmZjdlNjNmZWMzZGNhMTNmNTRiNjRiOWIzNWQ3MWQ5OGIwOWUwZTE5MDIiLCJpYXQiOjE2MDY3Mzc0MDcsIm5iZiI6MTYwNjczNzQwNywiZXhwIjoxNjM4MjczNDA3LCJzdWIiOiI4MSIsInNjb3BlcyI6W119.cRrLUsxsnbEASPf4hyHtL2Q5OJoO3R6anxcBaYs1EVfnl3we12HDPnD3qjEUBHaC4ZX32Dbv8XatvtNPjlhVtw"
+                    "Authorization" : "Bearer "
 
                 ]
                 var dt = Data()
